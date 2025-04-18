@@ -1,6 +1,12 @@
 # EEG-SVM-Decoding_Spatial-Normalization
 This code serves as a basic toolbox for performing spatial normalization in the SVM-based MVPA decoding on EEG datasets. The code supports within-subject and between-subject (leave-one-subject-out validation) decoding strategies. After decoding, users can visualize the results and perform statistical comparisons using the provided figure generation scripts.
 
+
+![EEG-SVM Decoding Spatial Normalization Figure 0](https://github.com/Yuan-gogogo/EEG-SVM-Decoding_Spatial-Normalization/blob/af628c92d1101ca121ab9348fe18b0c61db396cf/Codes_EEG_Decoding_SpatialNormalization/figure0.jpg
+)
+
+
+
 Main Steps and Usage Notes:
 
 First: Environment Setup
