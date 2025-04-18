@@ -51,3 +51,13 @@ Tips:
 Acknowledgment
 This work was supported by the National Natural Science Foundation of China (Grant No. 91748105), the National Foundation in China (No. JCKY2019110B009 and 2020-JCJQ-JJ-252), the National Social Science Fund of China (No. BGA210056), the scholarship from the China Scholarship Council (No.201906060242), the Fundamental Research Funds for the Central Universities (DUT20LAB303 and DUT20LAB308) in the Dalian University of Technology in China, and the Science and Technology Planning Project of Liaoning Province (No. 2021JH1/10400049).
 
+
+MIT License
+
+Copyright (c) 2025 Yuan Qin, Dalian University of Technology, China and University of Jyväskylä, Finland.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
