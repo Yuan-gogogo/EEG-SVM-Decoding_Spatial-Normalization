@@ -191,26 +191,42 @@ h1 = yline(ChanceLine,'--')
 h1.Label = strcat('Chance= ',string(ChanceLine),'%')
 h1.LabelHorizontalAlignment = 'center'
 
-%% Calculate EffectSize (Cohen's d)
-% Calculate Cohen's d for each group comparison
+
+
+
+
+
+
+%updat:2025_08
+%% Calculate Effect Size: Cohen's d and Paired t-tests
+% Compute Cohen's d
 d1 = cohens_d(Coh(1, :), Coh(2, :));
 d2 = cohens_d(Coh(1, :), Coh(3, :));
 d3 = cohens_d(Coh(4, :), Coh(5, :));
 d4 = cohens_d(Coh(4, :), Coh(6, :));
 
-% Create results table
+% Perform paired t-tests
+[~, p1] = ttest(Coh(1, :), Coh(2, :));
+[~, p2] = ttest(Coh(1, :), Coh(3, :));
+[~, p3] = ttest(Coh(4, :), Coh(5, :));
+[~, p4] = ttest(Coh(4, :), Coh(6, :));
+
+% Create result table
 lastname = {'BetweenSub_Origin-Before'; 'BetweenSub_Origin-After'; ...
             'WithinSub_Origin-Before'; 'WithinSub_Origin-After'};
 cohens_d_values = [d1; d2; d3; d4];
+p_values = [p1; p2; p3; p4];
 
-result_table = table(lastname, cohens_d_values, ...
-                     'VariableNames', {'Comparison', 'Cohens_d'});
+result_table = table(lastname, cohens_d_values, p_values, ...
+                     'VariableNames', {'LastName', 'Cohens_d', 'P_Value'});
+
+% Display result
 disp(result_table);
 
-% Save results to Excel
-filename = strcat(NumComponent,'_',NameComponent,'_Cohen.xlsx');
+% Save results to Excel file
+filename = strcat(NumComponent, '_', NameComponent, '_Cohen_p.xlsx');
 writetable(result_table, filename);
 
-%% Save Figure
-NameFigure = strcat(NameComponent,'_ACC_SE_Cross-Between-Within.png')
+%% Save figure
+NameFigure = strcat(NameComponent, '_ACC_SE_Cross-Between-Within.png');
 saveas(gcf, NameFigure);
